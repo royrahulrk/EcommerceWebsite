@@ -1,0 +1,64 @@
+.display-grid {
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    gap: 1rem;
+  }
+  
+  .grid {
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+  }
+  
+  .grid .img-sing {
+    max-width: 100%;
+    max-height: 100%;
+    background-size: cover;
+    object-fit: contain;
+    cursor: pointer;
+    box-shadow: #000;
+    height: 10rem;
+  }
+  
+  .main-screen {
+    display: grid;
+    place-items: center;
+    order: 1;
+    padding-right: 16px;
+  }
+  
+  .main-screen img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: #000;
+  }
+  
+  .grid-four-column-1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .fig-img{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition:none
+  }
+  
+  @media (max-width: 768px) {
+    .display-grid {
+      display: flex;
+      flex-direction: column;
+      order: 1;
+    }
+  
+    .grid-four-column {
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  

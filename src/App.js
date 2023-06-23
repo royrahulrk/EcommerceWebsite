@@ -1,7 +1,18 @@
 import React from "react";
+import RouterPage from "./Components/RouterPage/RouterPage";
+import "./App.css"
+import Footer from "./Components/Footer/Footer";
+import Header from "./Components/Header/Header";
+
 
 const App = () => {
-  return <div>Welcome to Thapa React E-Commerce Website</div>;
+  return(
+    <>
+    <Header/>
+    <RouterPage/>
+    <Footer/>
+    </>
+  ) ;
 };
 
 export default App;
